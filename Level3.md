@@ -46,7 +46,7 @@
 | <img src="https://github.com/user-attachments/assets/5584ef2b-1ed9-4145-a2df-c6eb7552f568" height=400> | <img src="https://github.com/user-attachments/assets/ea55c3c4-938b-4cdf-b7ca-d812ac675a08" height=200> | <img src="https://github.com/user-attachments/assets/581390ff-31b0-4020-8644-43ccda2d324d" height=450> |
 |----|----|----|
 
-항상 좋은 말만 잔뜩 해주는 고마운 팀원들이라 올바르게 성장하고 있는지 점검해야 하고 더욱 노력해야 한다. 😅 
+항상 좋은 말만 잔뜩 해주는 고마운 팀원들이다.
 덕분에 자신감을 많이 얻어 최근에 지식을 대화나 글로 전달할 때 핵심 내용을 먼저 고려하는 습관이 생긴 것 같다. 
 글의 전체적인 길이와 작성하는 시간은 줄어들고, 내용의 질이 올라가고 있음을 스스로 체감하고 있다. 
 이번 경험을 통해 앞으로도 나에 대한 문제점이 제기되었을 때 원인을 분석하고 개선 방안을 찾아 실천하는 자세를 유지하고 싶고, 목표를 이루고 싶다.
