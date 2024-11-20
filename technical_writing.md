@@ -100,7 +100,7 @@ org.hibernate.SQL
 
 네트워크 왕복 횟수를 줄여 오버헤드를 감소시키기는 했지만, 데이터베이스에서는 여전히 각 SQL 쿼리를 개별적으로 실행해야 하는 상황입니다. MySQL 기준으로 데이터베이스에 데이터를 삽입하려면 `클라이언트 스레드 할당 –> 쿼리 파서 및 전처리 -> 옵티마이저의 실행 계획 수립 -> 락 획득 -> 데이터 저장 -> 락, 스레드 반납`과 같은 과정을 거쳐야 합니다. 아무리 단시간에 처리되는 간단한 쿼리라도 쿼리마다 매번 이러한 과정이 발생하면 성능 상 손해를 볼 수 밖에 없습니다. 예를 들어, 한 쿼리에 0.01초가 걸린다고 해도 이를 100번 반복하면 총 1초가 소요됩니다. 단순한 계산으로도 배치를 통해 얻는 성능상의 이점을 넘어서는 수치입니다.
 
-따라서 여러 건의 INSERT 쿼리를 하나의 BULK INSERT 쿼리로 개선할 수 있도록 MySQL `rewriteBatchedStatements` 옵션을 제공합니다.
+따라서 MySQL JDBC 드라이버는 여러 건의 INSERT 쿼리를 하나의 BULK INSERT 쿼리로 개선할 수 있도록 `rewriteBatchedStatements` 옵션을 제공합니다.
 
 ```
 jdbc:mysql://localhost:3306/momo?rewriteBatchedStatements=true
