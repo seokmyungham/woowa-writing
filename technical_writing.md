@@ -121,7 +121,7 @@ VALUES ('jazz', 26), ('pedro', 26), ('baeky', 26), ('mark', 27), ('daon', 28);
 
 ### ORM과 Batch 철학의 충돌
 
-지금까지 Hibernate가 제공하는 배치 기능과 MySQL에서 BULK INSERT를 하는 방법에 대해 알아봤습니다. 바로 결론부터 말씀드리면 만약 기본 키에 대해 자동생성 방법 중 IDENTITY 전략을 취할 경우 위 방법들은 사용할 수 없습니다.
+지금까지 Hibernate가 제공하는 배치 기능과 MySQL에서 BULK INSERT를 사용하는 방법에 대해 알아보았습니다. 그러나 기본 키 자동 생성 전략으로 IDENTITY를 사용하는 경우에는 이러한 방법들을 적용할 수 없습니다.
 
 `@GeneratedValue(strategy = GenerationType.IDENTITY)` 전략을 사용할 경우 Hibernate의 `쓰기 지연(Write-Behind)` 철학과 `Batch Processing` 간의 충돌이 발생하고, Hibernate는 JDBC 레벨에서 Batch Processing을 비활성화 시킵니다.
 
