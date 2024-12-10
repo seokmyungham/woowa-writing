@@ -1,4 +1,4 @@
-# MySQL, JPA Bulk Query & Batch Processing 성능 개선기
+# MySQL, JDBC Bulk Query & Batch Processing 성능 개선기
 
 ## Intro
 
